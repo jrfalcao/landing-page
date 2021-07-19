@@ -14,7 +14,7 @@ export default function Header() {
 					<h1 className="masthead-heading mb-0">Super Black Fride</h1>
 					<h3 className="m-3">Receba informações de descontos em primeira mão!</h3>
 					<input className="input-email" type="email" value={email} placeholder="Seu melhor e-mail!" onChange={ e => setEmail(e.target.value)} />
-					<a className="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll" onClick={handleCadastra}>Cadastrar</a>
+					<button className="btn btn-primary btn-xl rounded-pill mt-5" onClick={handleCadastra}>Cadastrar</button>
 				</div>
 			</div>
 			<div className="bg-circle-1 bg-circle"></div>
