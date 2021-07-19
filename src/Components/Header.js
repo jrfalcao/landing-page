@@ -5,6 +5,10 @@ export default function Header() {
 
 	function handleCadastra() {
 		localStorage.setItem('user_email', email);
+		let inputEmail = document.querySelector('.input-email');
+		inputEmail.value = '';
+		alert('Email cadastrado com sucesso!');
+		
 	}
 
 	return (
@@ -14,7 +18,7 @@ export default function Header() {
 					<h1 className="masthead-heading mb-0">Super Black Fride</h1>
 					<h3 className="m-3">Receba informações de descontos em primeira mão!</h3>
 					<input className="input-email" type="email" value={email} placeholder="Seu melhor e-mail!" onChange={ e => setEmail(e.target.value)} />
-					<button className="btn btn-primary btn-xl rounded-pill mt-5" onClick={handleCadastra}>Cadastrar</button>
+					<button className="btn btn-primary btn-xl rounded-pill mt-5 btn-cadastrar" onClick={handleCadastra}>Cadastrar</button>
 				</div>
 			</div>
 			<div className="bg-circle-1 bg-circle"></div>
